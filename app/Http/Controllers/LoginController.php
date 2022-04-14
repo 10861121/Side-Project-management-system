@@ -38,6 +38,8 @@ class LoginController extends Controller
         {
             $this->LinePush("有人試圖登入".$account);
             return Redirect::back()->withErrors(['帳號或密碼輸入錯誤']);
+
+            
         }
         else
         {
